@@ -21,3 +21,8 @@ code {
     src: local("Prompt"),
      url("./asset/font/Prompt-Bold.ttf") format("truetype")
     }
+    @font-face {
+      font-family: "Nunito";
+      src: local("Nunito"),
+       url("./asset/font/Nunito-Regular.ttf") format("truetype")
+      }

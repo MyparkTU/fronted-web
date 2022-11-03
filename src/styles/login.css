@@ -1,101 +1,99 @@
 
 .App {
-    background-color: white;
-  }
+  background-color: white;
+}
+
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #1A324A;
+}
+
+.Auth-form {
+  width: 28.23%;
+  height: 53.98%;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+
+label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #757575;
+  font-family: 'Promptlight';
+  margin-top: 7.37%;
+
+}
+.fontlabel {
+  font-family: 'Promptlight'
   
-  .Auth-form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background: #1A324A;
-  }
+}
+.fonthead {
+
+  font-family: 'PromptBold';
   
+  font-size: 24px;
+
+  font-weight: 800;
+
+  
+
+}
+.underhead {
+  font-family: 'Promptlight';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #757575;
+  margin-top: -17%;
+
+
+}
+.head { 
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  margin-top: 5%;
+  
+
+
+  
+
+}
+.space {
+  display: flex;
+  flex-direction: row;
+
+
+  
+
+}
+
+
+
+@media screen and (max-width: 768px) {
   .Auth-form {
-    width: 28.23%;
-    height: 53.98%;
-    box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    border-radius: 8px;
-    background-color: white;
-  }
-  
-  .Auth-form-content {
-    padding-left: 12%;
-    padding-right: 12%;
-  }
-
-  
-  label {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #757575;
-    font-family: 'Promptlight';
-    margin-top: 7.37%;
-
-  }
-  .fontlabel {
-    font-family: 'Promptlight'
-    
+    width: 60.14%;
+    height: 65.02%;
   }
   .fonthead {
-
-    font-family: 'PromptBold';
-    color: #035397;
-    font-size: 24px;
-
-    font-weight: 800;
-
-    
-
+    font-size: 13px;
   }
   .underhead {
-    font-family: 'Promptlight';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #757575;
-    margin-top: -17%;
-
-
+    font-size: 8px ;
   }
-  .head { 
-    display: flex;
-    flex-direction: column;
-    margin-left: 3%;
-    margin-top: 5%;
-    
-
-
-    
-
-  }
-  .space {
-    display: flex;
-    flex-direction: row;
-
-
-    
-
-  }
-
-
-
-  @media screen and (max-width: 768px) {
-    .Auth-form {
-      width: 60.14%;
-      height: 50.02%;
-    }
-    .fonthead {
-      font-size: 13px;
-    }
-    .underhead {
-      font-size: 8px ;
-    }
-
-    
-  }
+}

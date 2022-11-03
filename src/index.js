@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import './asset/font/Prompt-Regular.ttf'
 import './asset/font/Prompt-Bold.ttf'
+import './asset/font/Nunito-Regular.ttf'
 import LoginPage from './pages/LoginPage';
 import reportWebVitals from './reportWebVitals';
+import Reporttest from './components/NewReport';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LoginPage />
+    <Reporttest />
   </React.StrictMode>
 );
 

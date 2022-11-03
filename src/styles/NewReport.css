@@ -1,0 +1,47 @@
+.boxstyle{
+    background: linear-gradient(90deg, rgba(187, 107, 217, 0.1) 0%, rgba(242, 122, 84, 0.1) 62.15%), #FFFFFF;
+    order: 1px solid #E3E3E3;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    width: 316px;
+    height: 127px;
+}
+.typereport {
+    font-family: 'Promptlight';
+    font-size: 24px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #BB6BD9 0%, #F27A54 62.15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.head { 
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-top: 5%;
+
+    
+  
+  
+    
+  
+  }
+  .space {
+    display: flex;
+    flex-direction: row;
+  
+  
+    
+  
+  }
+  .report {
+       font-family: 'Promptlight';
+       margin-top: -8%;
+       color: #939393;
+  }
+  .image {
+    margin-top: 6%;
+    margin-right: 1%;
+  }
