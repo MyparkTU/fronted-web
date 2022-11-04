@@ -1,0 +1,15 @@
+.popover .arrow {
+    display: none !important;
+    height: 500px
+}
+
+.body {
+    font-family: 'Promptlight';
+    font-weight: 400;
+}
+
+.title{
+    font-weight: 600;
+    color: #035397;
+    
+}
