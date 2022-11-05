@@ -5,6 +5,7 @@ import image from '../asset/image/UserImage.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/UserInfo.css';
 import {TbPencil} from 'react-icons/tb';
+import { Card } from 'react-bootstrap';
 
 function UserInfo() {
   const [show, setShow] = useState(false);
@@ -17,8 +18,8 @@ function UserInfo() {
   };
 
   return (
-    <div ref={ref}>
-        <p>ปี๊ด บ้านปูน</p>
+    <div ref={ref} className = "space">
+        <p className='username' >ปี๊ด บ้านปูน</p>
       <button class="btn btn-default" onClick={handleClick}><img src = {image}/></button>
      
       <Overlay
@@ -29,21 +30,21 @@ function UserInfo() {
         containerPadding={20}
         
       >
-        <Popover id="popover-contained">
+          <Card className='size'>
           <Popover.Body className='body'>
             <text className='title'>เกี่ยวกับผู้ใช้</text>
             <br/>
-            ชื่อผู้ใช้ Admin_001 <TbPencil/>  
+            <text className='label'>ชื่อผู้ใช้    Admin_001 </text><TbPencil/>  
+            <br/><text className='label'>
+            เปลี่ยนรูปโปรไฟล์</text>
+            <br/><text className='label'>
+            เปลี่ยนรหัสผ่าน</text>
             <br/>
-            เปลี่ยนรูปโปรไฟล์
-            <br/>
-            เปลี่ยนรหัสผ่าน
-            <br/>
-            <button className="btn btn-default " 
-            style={{background: "#BB6BD9"}}>
-            Log out</button>
+            <button className="btn btn-default colorbutton" 
+            >
+            <h5 style={{color: "#FFFFFF"}}>Log out</h5></button>
           </Popover.Body>
-        </Popover>
+      </Card>
       </Overlay>
     </div>
   );

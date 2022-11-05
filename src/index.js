@@ -7,11 +7,12 @@ import './asset/font/Nunito-Regular.ttf'
 import LoginPage from './pages/LoginPage';
 import reportWebVitals from './reportWebVitals';
 import Reporttest from './components/NewReport';
+import Header from './components/header';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Reporttest />
+    <Header />
   </React.StrictMode>
 );
 

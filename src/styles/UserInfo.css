@@ -1,15 +1,64 @@
 .popover .arrow {
     display: none !important;
     height: 500px
+    
 }
 
 .body {
     font-family: 'Promptlight';
     font-weight: 400;
+    flex-direction: column;
+    margin: 10%;
 }
 
 .title{
+    display: flex;
     font-weight: 600;
     color: #035397;
+    justify-content: center;
+    margin-top: 2%;
+    font-size: 24px;
+    font-family: 'Promptlight';
+    
+}
+.space {
+
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    margin-left: 50%;
+    
+  
+  
+    
+  
+  }
+.colorbutton {
+    display: block;
+    background: linear-gradient(90deg, #BB6BD9 0%, #F27A54 62.15%);
+    box-shadow: 0px 10px 10px rgba(1, 170, 192, 0.1);
+    border-radius: 25px;
+    width: 224px;
+    height: 50;
+    justify-content: flex-end;
+    
+}
+.size {
+    width: 343px;
+    height: 312px;
+    margin-top: 1%;
+    border-radius: 8%;
+    box-shadow: 1px 1px 6.25px 2.5px rgba(0, 0, 0, 0.1);
+}
+.label {
+    font-size: 24px;
+    font-family: 'Promptlight';
+    
+
+}
+.username {
+    font-family: 'Promptlight';
+    font-size: 14px;
+    margin-top: 7%;
     
 }
