@@ -1,0 +1,25 @@
+.colors {
+    background-color: #1A324A;
+    width: 15.2%;
+    height: 100%;
+
+}
+.label {
+    font-family: 'Promptlight';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+.space {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+.headlabel{
+    font-family: 'Promptlight';
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.77);
+}

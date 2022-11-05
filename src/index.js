@@ -8,11 +8,20 @@ import LoginPage from './pages/LoginPage';
 import reportWebVitals from './reportWebVitals';
 import Reporttest from './components/NewReport';
 import Header from './components/header';
+import SideBar from './components/SideBar'
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+import { ProSidebarProvider } from 'react-pro-sidebar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header />
+
+    <BrowserRouter>
+     <App />
+    </BrowserRouter>
+    
+
   </React.StrictMode>
 );
 
