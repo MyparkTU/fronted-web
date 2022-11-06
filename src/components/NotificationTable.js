@@ -21,7 +21,7 @@ const changeActive= (props) => {
   }
 function NotificationTable(){
     return (
-       <Card style={{height:"750px"}}>
+       <Card className='Notitable'>
             <Card.Header style={{backgroundColor:"white",color:"#757575"}}>
                 <text className="header">ทั้งหมด </text>
             </Card.Header>
@@ -30,7 +30,7 @@ function NotificationTable(){
                 <Row style={{marginTop:"2%"}}>
                     <Col md={4}>
                             <Card className="card-status1">
-                            <text class="d-flex justify-content-center" className="status1">
+                            <text class="d-flex justify-content-center"  style={{fontFamily:"Promptlight"}}>
                             รอการตรวจสอบ
                             </text>
                             </Card>
@@ -49,7 +49,7 @@ function NotificationTable(){
                 <Row style={{marginTop:"4%"}}>
                     <Col md={4}>
                         <Card className="card-status2">
-                            <text class="d-flex justify-content-center" className="status2">
+                            <text class="d-flex justify-content-center" style={{fontFamily:"Promptlight" ,justifyContent:"center"}}>
                             รอการตรวจสอบ
                             </text>
                         </Card>

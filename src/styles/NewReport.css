@@ -74,3 +74,20 @@ text-fill-color: transparent;
   display: flex;
   flex-direction: row;
 }
+@media screen and (max-width: 768px) {
+  .carboxstyle{
+    width: 250px;
+    margin-top: 5%;
+    margin-left: 17%;
+  }
+  .columreport{
+    display: flex;
+  flex-direction: column;
+  margin-right: 50%;
+  }
+  .moterboxstyle{
+    width: 250px;
+    margin-top: 5%;
+    margin-left: 17%;
+  }
+}
