@@ -30,13 +30,13 @@ function ParkTable() {
       <Card.Header style={{backgroundColor:"white"}}>
         <Nav variant="pills">
           <Nav.Item style={{marginLeft:"2%"}}>
-            <Nav.Link eventKey="first">ทั้งหมด</Nav.Link>
+            <Nav.Link eventKey="first" className="tag1">ทั้งหมด</Nav.Link>
           </Nav.Item>
           <Nav.Item style={{marginLeft:"5%"}}>
-            <Nav.Link eventKey="second">กำลังรอดำเนินการ</Nav.Link>
+            <Nav.Link eventKey="second" className="tag2">กำลังรอดำเนินการ</Nav.Link>
           </Nav.Item>
           <Nav.Item style={{marginLeft:"5%"}}>
-            <Nav.Link eventKey="third">ดำเนินการเสร็จสิ้น</Nav.Link> 
+            <Nav.Link eventKey="third" className="tag3">ดำเนินการเสร็จสิ้น</Nav.Link> 
           </Nav.Item>
         </Nav>
       </Card.Header>
@@ -49,11 +49,11 @@ function ParkTable() {
           <img src={ParkImage}/>
           </Col>
           <Col>
-          <text style={{color:"#757575"}}>
+          <text className="park-name">
           ลานจอดรถวิศวะ
           </text>
           <br/>
-          <text style={{color:"#818181"}}>
+          <text className="detail">
           11/22/2022 15:02
           <br/>
           หัวเรื่อง : เซ็นเซอร์เสีย
@@ -64,10 +64,10 @@ function ParkTable() {
           </text>
           </Col>
           <Col xs={4}>
-          <text style={{backgroundColor:"#FFF0CA",color:"#C58E00"}}>สถานะ :  รอการตรวจสอบ </text> 
+          <text className="status-park">สถานะ :  รอการตรวจสอบ </text> 
           </Col>
           <Col xs={4} >
-            <text style={{backgroundColor:"#035397",color:"#FFF"}}>
+            <text className="status-button">
           เปลี่ยนสถานะ
           </text>
           </Col>

@@ -6,12 +6,13 @@ import NotificationPage from './pages/NotificationPage';
 import ParkPage from './pages/ParkPage';
 import Reportpage from './pages/ReportPage';
 import Search from './components/Search';
+import ParkTable from './components/ParkTable';
 import { BrowserRouter as Router, Routes,Route} from 'react-router-dom';
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Dashboard />}/>
+        <Route path="/" element={<ParkTable />}/>
         <Route path="/Login" element={<LoginPage />}/>
         <Route path="/Dashboard" element={<Dashboard />}/>
         <Route path="/Notifiaction" element={<NotificationPage />}/>
