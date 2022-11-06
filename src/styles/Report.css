@@ -36,6 +36,7 @@
 
 
 .status-park{
+    
     margin-left:70px;
     background-color:#FFF0CA;
     color:#C58E00;
@@ -48,7 +49,7 @@
 }
 
 .status-button{
-    
+    width: 110px;
     margin-left:80px;
     background-color:#035397;
     color:#FFF;
@@ -105,16 +106,25 @@
 
     margin-left: 350px;
 }
+.labelstate{
+   
+    margin-left: 17%;
+}
 
 @media screen and (max-width: 768px) {
+.stylerow{
+    display: flex;
+    flex-direction: row;
+}
 .destopic {
     display: flex;
     flex-direction: column;
     
 }
 .card-park{
-    width: 300px;
+    width: 600px;
     height: 1000px;
+    margin-left: 11%;
 }
 .detailall{
     width: 400px;
@@ -127,7 +137,7 @@
     width: 110px;
     position: absolute;
     margin-top: 90% ;
-    margin-left: -3%;
+    margin-left: -2%;
 
 
 
@@ -136,7 +146,7 @@
     width: 110px;
     position: absolute;
     margin-top: 90% ;
-    margin-left: 48%;
+    margin-left: 43%;
 
 
 }

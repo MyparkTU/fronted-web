@@ -7,6 +7,8 @@ import ParkPage from './pages/ParkPage';
 import Reportpage from './pages/ReportPage';
 import Search from './components/Search';
 import ParkTable from './components/ParkTable';
+import AddPark from './components/AddPark';
+import NotificationTable from './components/NotificationTable';
 import { BrowserRouter as Router, Routes,Route} from 'react-router-dom';
 function App() {
   return (

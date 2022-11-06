@@ -22,6 +22,7 @@ items.push(
 }
 
 
+<<<<<<< HEAD
 
 function ReportTable() {
     return (
@@ -74,6 +75,69 @@ function ReportTable() {
                 <Col>
                 <button className="btn btn-default2" style={{backgroundColor:"#FBDBDB",color:"#D96666"}}>ลบ</button>
                 </Col>
+=======
+function ParkTable() {
+  return (
+    <Card className="card-park">
+      
+      <Tab.Container defaultActiveKey="first">
+      <Card.Header style={{backgroundColor:"white"}}>
+        <Nav variant="pills">
+          <Nav.Item style={{marginLeft:"2%"}}>
+            <Nav.Link eventKey="first" className="tag1">ทั้งหมด</Nav.Link>
+          </Nav.Item>
+          <Nav.Item style={{marginLeft:"5%"}}>
+            <Nav.Link eventKey="second" className="tag2">กำลังรอดำเนินการ</Nav.Link>
+          </Nav.Item>
+          <Nav.Item style={{marginLeft:"5%"}}>
+            <Nav.Link eventKey="third" className="tag3">ดำเนินการเสร็จสิ้น</Nav.Link> 
+          </Nav.Item>
+        </Nav>
+      </Card.Header>
+      <Card.Body>
+        <Tab.Content>
+          <Tab.Pane eventKey="first">
+        <Container fluid>
+          <Row className="destopic">
+          <Col >
+          <img src={ParkImage} style={{position:"absolute"}}/>
+          </Col>
+          <Col xs = {3} className ="detailall">
+          <text className="park-name">
+          ลานจอดรถวิศวะ
+          </text>
+          <br/>
+          <text className="detail">
+          11/22/2022 15:02
+          <br/>
+          หัวเรื่อง : เซ็นเซอร์เสีย
+          <br/>
+          ประเภทปัญหา : เซ็นเซอร์
+          <br/>
+          ข้อความ : เซ็นเซอร์เสียครับแอพบอกว่ามีที่จอดแต่ช่องจอดเต็ม
+          </text>
+          </Col >
+          <Col xs={2}>
+          <text className="status-park" >สถานะ :  รอการตรวจสอบ </text> 
+          </Col>
+          <Col xs={4} className="status-button" >
+            <text  className='labelstate'>
+          เปลี่ยนสถานะ
+          </text>
+          </Col>
+          </Row>
+        </Container>
+        </Tab.Pane>
+        <Tab.Pane eventKey="second">
+        <Card.Text>
+          hello
+        </Card.Text>
+        </Tab.Pane>
+        </Tab.Content>
+        <Tab.Pane eventKey="third">
+          <Card.Text>
+            Sawadee krub
+>>>>>>> e07c1f196785a7159e27bbe10a635acb3060446e
             
             </Row>
             <Row>
