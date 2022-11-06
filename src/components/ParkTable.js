@@ -66,8 +66,8 @@ function ParkTable() {
           <Col xs={2}>
           <text className="status-park" >สถานะ :  รอการตรวจสอบ </text> 
           </Col>
-          <Col xs={4} >
-            <text className="status-button">
+          <Col xs={4} className="status-button" >
+            <text  className='labelstate'>
           เปลี่ยนสถานะ
           </text>
           </Col>

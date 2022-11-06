@@ -27,11 +27,11 @@ function ReportTable() {
     return (
         <Card className="report-table">
             <Card.Header style={{backgroundColor:"white"}}>
-                <Row>
+                <Row >
                 <Col>
                     <text className="park-place">สถานที่จอดรถ</text>
                 </Col>
-                <Col xl={2}>
+                <Col >
                     <text className="park-type">ประเภทที่จอดรถ</text>
                 </Col>
                 <Col>
@@ -92,7 +92,7 @@ function ReportTable() {
                     
                 </Col>
                 <Col>
-                <text style={{backgroundColor:"#F4FBDB",color:"#92D966"}}>พร้อมใช้งาน</text>
+                <text className='type-park' style={{backgroundColor:"#F4FBDB",color:"#92D966"}}>พร้อมใช้งาน</text>
                 </Col>
                 <Col>
                 <button className="btn btn-default1" >แก้ไข</button>
