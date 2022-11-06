@@ -23,17 +23,17 @@ function NotificationTable(){
     return (
        <Card style={{height:"750px"}}>
             <Card.Header style={{backgroundColor:"white",color:"#757575"}}>
-                <text style={{marginTop:"5%",fontSize:"20px",marginLeft:"1%"}}>ทั้งหมด </text>
+                <text className="header">ทั้งหมด </text>
             </Card.Header>
             <Card.Body>
-                <div style={{width:"26%",height:"50%"}}>
+                <div style={{width:"50%",height:"50%"}}>
                 <Row style={{marginTop:"2%"}}>
                     <Col md={4}>
-                        <Card style={{backgroundColor:"#C58E00",color:"#fff",marginTop:"5%", width:"75%",height:"50%"}}>
-                            <text class="d-flex justify-content-center">
+                            <Card className="card-status1">
+                            <text class="d-flex justify-content-center" className="status1">
                             รอการตรวจสอบ
                             </text>
-                        </Card>
+                            </Card>
                     </Col>
                     <Col md={8}>
                         <text>
@@ -48,8 +48,8 @@ function NotificationTable(){
                 </Row>
                 <Row style={{marginTop:"4%"}}>
                     <Col md={4}>
-                        <Card style={{backgroundColor:"#035397",color:"#fff",marginTop:"5%", width:"75%",height:"50%"}}>
-                            <text class="d-flex justify-content-center">
+                        <Card className="card-status2">
+                            <text class="d-flex justify-content-center" className="status2">
                             รอการตรวจสอบ
                             </text>
                         </Card>
