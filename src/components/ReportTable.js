@@ -5,7 +5,7 @@ import Tab from 'react-bootstrap/Tab';
 import ParkImage from '../asset/image/ParkImage.png';
 import Pagination from 'react-bootstrap/Pagination';
 import { Row, Container, Col} from 'react-bootstrap';
-import '../styles/Report.css'
+import '../styles/reportTable.css'
 const changeActive= (props) => {
   active =  props
   console.log(active)
@@ -24,25 +24,24 @@ items.push(
 
 
 function ReportTable() {
-    const stars = Array(5).fill(0)
     return (
-        <Card className="report">
+        <Card className="report-table">
             <Card.Header style={{backgroundColor:"white"}}>
                 <Row>
                 <Col>
-                    สถานที่จอดรถ
+                    <text className="park-place">สถานที่จอดรถ</text>
+                </Col>
+                <Col xl={2}>
+                    <text className="park-type">ประเภทที่จอดรถ</text>
                 </Col>
                 <Col>
-                    ประเภทที่จอดรถ
+                    <text className="park-sensor">เซ็นเซอร์</text>
                 </Col>
                 <Col>
-                    เซ็นเซอร์
+                    <text className="park-score">คะแนน</text>
                 </Col>
                 <Col>
-                    คะแนน
-                </Col>
-                <Col>
-                    สถานะ
+                    <text className="park-status">สถานะ</text>
                 </Col>
                 <Col>
                     
@@ -53,10 +52,10 @@ function ReportTable() {
             <Card.Body>
             <Row>
                 <Col>
-                <img src={ParkImage}></img>
+                <img src={ParkImage} width="85%"></img>
                 </Col>
                 <Col>
-                <text> ที่จอดรถสาธารณะ </text>
+                <text className="type-park"> ที่จอดรถสาธารณะ </text>
                 </Col>
                 <Col>
                 <text>
@@ -67,25 +66,25 @@ function ReportTable() {
                     
                 </Col>
                 <Col>
-                <text style={{backgroundColor:"#F4FBDB",color:"#92D966"}}>พร้อมใช้งาน</text>
+                <text className="text-status">พร้อมใช้งาน</text>
                 </Col>
                 <Col>
-                <button className="btn btn-default" style={{backgroundColor:"#FBF6DB",color:"#D9B966"}}>แก้ไข</button>
+                <button className="btn btn-default1" id="status-button"style={{backgroundColor:"#FBF6DB",color:"#D9B966"}}>แก้ไข</button>
                 </Col>
                 <Col>
-                <button className="btn btn-default" style={{backgroundColor:"#FBDBDB",color:"#D96666"}}>ลบ</button>
+                <button className="btn btn-default2" style={{backgroundColor:"#FBDBDB",color:"#D96666"}}>ลบ</button>
                 </Col>
             
             </Row>
             <Row>
             <Col>
-                <img src={ParkImage}></img>
+                <img src={ParkImage} width="85%"></img>
             </Col>
             <Col>
-                <text> ที่จอดรถสาธารณะ </text>
+                <text className="type-park"> ที่จอดรถสาธารณะ </text>
             </Col>
             <Col>
-                <text>
+                <text className='type-park'>
                     เซ็นเซอร์ 11,12
                 </text>
                 </Col>
@@ -96,10 +95,10 @@ function ReportTable() {
                 <text style={{backgroundColor:"#F4FBDB",color:"#92D966"}}>พร้อมใช้งาน</text>
                 </Col>
                 <Col>
-                <button className="btn btn-default" style={{backgroundColor:"#FBF6DB",color:"#D9B966"}}>แก้ไข</button>
+                <button className="btn btn-default1" >แก้ไข</button>
                 </Col>
                 <Col>
-                <button className="btn btn-default" style={{backgroundColor:"#FBDBDB",color:"#D96666"}}>ลบ</button>
+                <button className="btn btn-default2">ลบ</button>
                 </Col>
             </Row>
             </Card.Body>
