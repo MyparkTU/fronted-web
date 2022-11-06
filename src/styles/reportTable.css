@@ -1,0 +1,97 @@
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #035397;
+}
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: #757575;
+    --bs-nav-link-hover-color: var(--bs-link-hover-color);
+    --bs-nav-link-disabled-color: #757575d;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff !important;
+    background-color:#035397 !important;
+  }
+
+.report-table{
+   
+    width:69.5%;
+    height: 78%;
+    border:1px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    
+}
+
+.park-place{
+    font-size :20px;
+    font-family: Promptlight;
+    line-height: 30px;
+}
+.park-type{
+    font-size: 20px;
+    font-family: Promptlight;
+    line-height: 30px;
+}
+
+.park-sensor{
+    font-size: 20px;
+    font-family: Promptlight;
+    line-height: 30px;
+}
+
+.park-score{
+    font-size: 20px;
+    font-family: Promptlight;
+    line-height: 30px;
+}
+
+.park-status{
+    font-size: 20px;
+    font-family: Promptlight;
+    line-height: 30px;
+}
+
+.type-park{
+    font-size: 16px;
+    font-family: Promptlight;
+    line-height: 24px;
+}
+
+.text-status{
+    font-size: 16px;
+    font-family: Promptlight;
+    line-height: 24px;
+    background-color: #F4FBDB;
+    color: #92D966;
+}
+
+.btn-default1{
+    background-color:#FBF6DB;
+    color:#D9B966;
+    font-size: 16px;
+    font-family: Promptlight;
+    line-height: 24px;
+
+}
+
+.btn-default2{
+    background-color:#FBDBDB;
+    color:#D96666;
+    font-size: 16px;
+    font-family: Promptlight;
+    line-height: 24px;
+
+}
+
+
+
+
