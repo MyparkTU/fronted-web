@@ -6,7 +6,7 @@ import '../styles/header.css'
 class headers extends Component {
     render() {
         return (
-            <div className="space">
+            <div className="spaces">
             <Search />
             <Users />
             </div>

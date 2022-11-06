@@ -10,14 +10,14 @@ class LoginPage extends Component {
               <form className="Auth-form">
                 <div className="Auth-form-content" style={{borderradius: "8px"}}>
                   <div className='space'>
-                  <img src = {logoimage} width= "80px" height= "81px"  className='image' />
+                  <img src = {logoimage} width= "40px" height= "41px"  className='image' />
                   <div className='head'>
                   <p className=" fonthead" >Direct Admin</p>
                   <p className=" underhead" >Web Control Panel</p>
                   </div>
                   </div>
-                  <div className="form-group mt-3">
-                  
+
+                  <div className="form-group mt-3  ">             
                     <label  >อีเมลของคุณ</label>
                     <input
                       type="email"
