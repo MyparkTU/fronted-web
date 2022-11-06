@@ -48,7 +48,7 @@ function ParkTable() {
           <Col >
           <img src={ParkImage} style={{position:"absolute"}}/>
           </Col>
-          <Col xs = {3} style = {{marginLeft:"150px"}}>
+          <Col xs = {3} className ="detailall">
           <text className="park-name">
           ลานจอดรถวิศวะ
           </text>
@@ -64,10 +64,10 @@ function ParkTable() {
           </text>
           </Col >
           <Col xs={2}>
-          <text className="status-park" style={{marginLeft:"70px"}}>สถานะ :  รอการตรวจสอบ </text> 
+          <text className="status-park" >สถานะ :  รอการตรวจสอบ </text> 
           </Col>
           <Col xs={4} >
-            <text className="status-button" style={{marginLeft:"80px"}}>
+            <text className="status-button">
           เปลี่ยนสถานะ
           </text>
           </Col>
