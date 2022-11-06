@@ -6,7 +6,7 @@ import '../styles/Park.css';
 function ParkPage() {
     return(
         <div> 
-            <header>
+            <header className="shadowheader" >
             <div className="Dashboardrow">
                 <SideBar />
                     <div className="Topic">

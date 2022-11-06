@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<SideBar />}/>
+        <Route path="/" element={<Dashboard />}/>
         <Route path="/Login" element={<LoginPage />}/>
         <Route path="/Dashboard" element={<Dashboard />}/>
         <Route path="/Notifiaction" element={<NotificationPage />}/>

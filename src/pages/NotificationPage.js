@@ -5,7 +5,7 @@ import '../styles/Notification.css';
 
 function Notification() {
     return(
-        <header>
+        <header className="shadowheader">
         <div>     
             <div className="Notirow">
                 <SideBar />
@@ -13,7 +13,7 @@ function Notification() {
                         <h2 className="headerlabelNoti">การแจ้งเตือนทั้งหมด</h2>
                         <p className="underlabelNoti">Information > การแจ้งเตือน</p>
                     </div>
-                <Headers />
+                <Headers  />
             </div>
             
         </div>

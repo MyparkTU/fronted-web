@@ -6,7 +6,7 @@ import NewReport from'../components/NewReport';
 function DashboardPage() {
     return(
         <div> 
-            <header>
+            <header className="shadowheader">
             <div className="Dashboardrow">
                 <SideBar />
                     <div className="Topic">

@@ -7,7 +7,7 @@ function ReportPage() {
     return(
         <div> 
             
-            <header>
+            <header className="shadowheader">
             <div className="reportrow">
                 <SideBar />
                     <div className="Topic">
