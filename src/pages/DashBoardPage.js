@@ -16,7 +16,9 @@ function DashboardPage() {
                 <Headers />
             </div>
             </header>
-        
+        <body>
+            <NewReport />
+            </body> 
         </div>
         
     );
