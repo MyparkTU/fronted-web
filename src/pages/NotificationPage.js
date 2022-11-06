@@ -1,10 +1,12 @@
 import SideBar from "../components/SideBar";
 import Headers from "../components/header";
 import '../styles/Notification.css';
+import Notitable from "../components/NotificationTable";
 
 
 function Notification() {
     return(
+        <div>
         <header className="shadowheader">
         <div>     
             <div className="Notirow">
@@ -18,6 +20,10 @@ function Notification() {
             
         </div>
         </header>
+        <body>
+            <Notitable />
+        </body>
+        </div>
     );
 }
 
