@@ -22,3 +22,20 @@
     font-size: 16px;
 
 }
+
+@media screen and (max-width: 768px) {
+    .headerlabel{
+        font-size: 10px;
+        margin-top: 24%;
+        
+    }
+    .underlabel {
+        font-size: 10px;
+    }
+    .Topic{
+        margin-left: -5%;
+    }
+    .Dashboardrow {
+        margin-left: -5%;
+    }
+}

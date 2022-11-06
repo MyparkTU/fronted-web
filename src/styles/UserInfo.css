@@ -73,12 +73,15 @@
 }
 .dropdown{
     margin-right: 25px;
+    color: aliceblue;
 }
 @media screen and (max-width: 768px) {
-    .searchs {
-      margin-left: -50%;
-      
+    .username{
+        margin-right: -16%;
+        font-size: 10px;
+    
     }
-    
-    
+    .userimg{
+        margin-right: 15%;
+    }
   }

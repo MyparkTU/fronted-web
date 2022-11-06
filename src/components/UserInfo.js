@@ -24,7 +24,7 @@ function UserInfo() {
         <p className='username' >ปี๊ด บ้านปูน</p>
         
     <img src = {image} width="40px" height="40px" style={{borderradius: "100px"}} className="userimg"/>
-    <DropdownButton id="dropdown-basic-button" src={image} className="dropdown">
+    <DropdownButton id="dropdown-basic-button"  className="dropdown" color='FFFFF'>
       <Dropdown.Item href="#/action-1">เกี่ยวกับผู้ใช้</Dropdown.Item>
       <Dropdown.Item href="#/action-2">ชื่อผู้ใช้    Admin_001</Dropdown.Item>
       <Dropdown.Item href="#/action-3">Log out</Dropdown.Item>
