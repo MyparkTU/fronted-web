@@ -1,6 +1,7 @@
 import SideBar from "../components/SideBar";
 import Headers from "../components/header";
 import '../styles/Park.css';
+import Tablepark from '../components/ParkTable';
 
 
 function ParkPage() {
@@ -14,8 +15,12 @@ function ParkPage() {
                         <p className="underlabelparkpage">Management > สถานที่จอดรถทั้งหมด</p>
                     </div>
                 <Headers />
+                
             </div>
            </header>
+           <body>
+                    <Tablepark />
+                </body>
         </div>
     );
 }

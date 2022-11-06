@@ -21,64 +21,28 @@
     background-color:#035397 !important;
   }
 
-.card .park{
-    margin-left:5%;
+.card-park{
+    margin-left:7%;
     margin-Right:5%;
-    height:750px;
-    width:69.5%;
+    height:588px;
+    width: 1228px;
     border:1px;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
+    margin-top: 6%;
     
 }
 
-.tag1{
-    font-family: Promptlight;
-    font-size: 24px;
-    line-height:36px;
-    font-weight:400px
-    
-}
-
-.tag2{
-    font-family: Promptlight;
-    font-size:24px;
-    line-height:36px;
-    font-weight:400px;
-}
-
-.tag3{
-    font-family: Promptlight;
-    font-size:24px;
-    line-height:36px;
-    font-weight:400px;
-}
-
-.park-name{
-    color:"#757575";
-    font-family:Promptlight;
-    font-size:20px;
-    line-height:30px;
-    font-weight:400px;
-}
-
-.detail{
-    color:"#818181";
-    font-family:Promptlight;
-    font-size: 15px;
-    line-height:23px;
-    font-weight:400px;
-}
 
 .status-park{
     background-color:#FFF0CA;
     color:#C58E00;
     font-family:Promptlight;
     border-radius:4px;
-    font-size:20px;
+    font-size:10px;
     line-height:30px;
     font-weight:400px;
-    
+
 }
 
 .status-button{
@@ -86,9 +50,49 @@
     color:#FFF;
     font-family:Promptlight;
     border-radius:4px;
-    font-size:20px;
+    font-size:10px;
     line-height: 30px;
     font-weight:400px;
 
+
+}
+
+.tag1{
+    font-family: Promptlight;
+    font-size: 10px;
+    line-height:36px;
+    font-weight:400px
+
+}
+
+.tag2{
+    font-family: Promptlight;
+    font-size:10px;
+    line-height:36px;
+    font-weight:400px;
+}
+
+.tag3{
+    font-family: Promptlight;
+    font-size:10px;
+    line-height:36px;
+    font-weight:400px;
+}
+
+.park-name{
+    color:"#757575";
+    font-family:Promptlight;
+    font-size:10px;
+    line-height:30px;
+    font-weight:400px;
+}
+
+.detail{
+    color:"#818181";
+    font-family:Promptlight;
+    font-size: 10px;
+    line-height:23px;
+    font-weight:400px;
+    
 
 }
