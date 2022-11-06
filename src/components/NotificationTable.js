@@ -26,8 +26,8 @@ function NotificationTable(){
                 <text style={{marginTop:"5%",fontSize:"20px",marginLeft:"1%"}}>ทั้งหมด </text>
             </Card.Header>
             <Card.Body>
-                <div style={{width:"26%"}}>
-                <Row style={{marginTop:"0.5%"}}>
+                <div style={{width:"26%",height:"50%"}}>
+                <Row style={{marginTop:"2%"}}>
                     <Col md={4}>
                         <Card style={{backgroundColor:"#C58E00",color:"#fff",marginTop:"5%", width:"75%",height:"50%"}}>
                             <text class="d-flex justify-content-center">
@@ -46,7 +46,7 @@ function NotificationTable(){
                         </text>
                     </Col>
                 </Row>
-                <Row style={{marginTop:"0.5%"}}>
+                <Row style={{marginTop:"4%"}}>
                     <Col md={4}>
                         <Card style={{backgroundColor:"#035397",color:"#fff",marginTop:"5%", width:"75%",height:"50%"}}>
                             <text class="d-flex justify-content-center">
@@ -66,6 +66,9 @@ function NotificationTable(){
                     </Col>
                     <Col md={6}>
                     </Col>
+                </Row>
+                <Row style={{marginTop:"4%"}}>
+                    
                 </Row>
                 </div>
                 
