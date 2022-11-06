@@ -3,12 +3,12 @@
     order: 1px solid #E3E3E3;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
-    width: 316px;
-    height: 127px;
+    width: 16.45%;
+    height: 11.75%;
 }
 .typereport {
     font-family: 'Promptlight';
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 800;
     background: linear-gradient(90deg, #BB6BD9 0%, #F27A54 62.15%);
     -webkit-background-clip: text;
