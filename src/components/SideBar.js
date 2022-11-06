@@ -22,21 +22,21 @@ function SideBar() {
                 <Menu>
                
 
-                        <img src = {Sidebarlogo} width= "129px" height= "39px"   /> 
+                        <img src = {Sidebarlogo} width= "129px" height= "39px"  className='logomypark' /> 
 
-                            <MenuItem className='label'  href='/Dashboard'><img src = {dashboard} width= "24px" height= "24px"   />  Dashboard</MenuItem>
-                        <p className='headlabel'>MANAGEMENT</p> 
-                            <MenuItem className='label'  href='/Park'>
-                                <img src = {car} width= "24px" height= "24px"   /> 
+                            <MenuItem className='label menudashboard'  href='/Dashboard' ><img src = {dashboard} width= "24px" height= "24px" className='imagelogo'   />  Dashboard</MenuItem>
+                        <p className='headlabel notbutton'>MANAGEMENT</p> 
+                            <MenuItem className='label menupark'  href='/Park'>
+                                <img src = {car} width= "24px" height= "24px"  className='imagelogo' /> 
                              สถานที่จอดรถ
                          </MenuItem>
-                        <p className='headlabel'>INFORMATION</p>
-                            <MenuItem className='label'  href='/Report'>
-                                <img src = {report} width= "24px" height= "24px"   /> 
+                        <p className='headlabel notbutton'>INFORMATION</p>
+                            <MenuItem className='label menupark'  href='/Report'>
+                                <img src = {report} width= "24px" height= "24px" className='imagelogo'  /> 
                                รายงานปัญหา
                     </MenuItem >
-                        <MenuItem className='label'  href='/Notification'>
-                                <img src = {Notification} width= "24px" height= "24px"   /> 
+                        <MenuItem className='label menunoti'  href='/Notification'>
+                                <img src = {Notification} width= "24px" height= "24px"  className='imagelogo'  /> 
                                การแจ้งเตือน
                     </MenuItem>
                    
@@ -49,7 +49,7 @@ function SideBar() {
         <main style={{ display: 'flex', padding: 10 }}>
         <div>
             
-          <button type="button"  class="btn btn-secondary " onClick={() => toggleSidebar()} ><img src={menu}  />
+          <button type="button"  class="btn btn-secondary btns" onClick={() => toggleSidebar() } ><img src={menu}  />
           
           </button>
         </div>
