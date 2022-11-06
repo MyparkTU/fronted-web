@@ -18,7 +18,7 @@ function UserInfo() {
   };
 
   return (
-    <div ref={ref} className = "space">
+    <div ref={ref} className = "spacess">
         <p className='username' >ปี๊ด บ้านปูน</p>
       <button class="btn btn-default" onClick={handleClick}><img src = {image}/></button>
      
