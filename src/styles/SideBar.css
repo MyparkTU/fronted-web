@@ -18,5 +18,42 @@
     font-family: 'Promptlight';
     font-style: normal;
     color: rgba(255, 255, 255, 0.77);
+    font-weight:bold;
     
+}
+.logomypark {
+    margin-top: 15%;
+    margin-left: 10%;
+}
+.menudashboard{
+    margin-top: 20%;
+    margin-left: 10%;
+
+}
+
+.notbutton {
+    margin-top: 10%;
+    margin-left: 8%;
+
+
+}
+
+.menupark {
+    margin-left: 10%;
+
+}
+.menunoti {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.imagelogo {
+    margin-right: 5%;
+    margin-bottom: 2%;
+
+}
+
+.btns {
+    background-color: #1A324A;
+    margin-top: 20% ;
+
 }

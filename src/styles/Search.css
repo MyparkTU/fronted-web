@@ -1,7 +1,8 @@
 
 .has-search .form-control {
     padding-left: 2.375rem;
-    width: 18%;
+    width: 100%;
+    
   }
   
   .has-search .form-control-feedback {
@@ -15,3 +16,17 @@
     pointer-events: none;
     color: #aaa;
   }
+.searchs {
+  margin-left: -50%;
+  margin-top: "5%";
+  width: 900px;
+}
+
+@media screen and (max-width: 768px) {
+  .searchs {
+    margin-left: -50%;
+    
+  }
+  
+  
+}

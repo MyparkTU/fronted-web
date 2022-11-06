@@ -4,6 +4,8 @@ import Popover from 'react-bootstrap/Popover';
 import image from '../asset/image/UserImage.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/UserInfo.css';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 import {TbPencil} from 'react-icons/tb';
 import { Card } from 'react-bootstrap';
 
@@ -20,32 +22,19 @@ function UserInfo() {
   return (
     <div ref={ref} className = "spacess">
         <p className='username' >ปี๊ด บ้านปูน</p>
-      <button class="btn btn-default" onClick={handleClick}><img src = {image}/></button>
-     
-      <Overlay
-        show={show}
-        target={target}
-        placement="bottom"
-        container={ref}
-        containerPadding={20}
         
-      >
-          <Card className='size'>
-          <Popover.Body className='body'>
-            <text className='title'>เกี่ยวกับผู้ใช้</text>
-            <br/>
-            <text className='label'>ชื่อผู้ใช้    Admin_001 </text><TbPencil/>  
-            <br/><text className='label'>
-            เปลี่ยนรูปโปรไฟล์</text>
-            <br/><text className='label'>
-            เปลี่ยนรหัสผ่าน</text>
-            <br/>
-            <button className="btn btn-default colorbutton" 
-            >
-            <h5 style={{color: "#FFFFFF"}}>Log out</h5></button>
-          </Popover.Body>
-      </Card>
-      </Overlay>
+    <img src = {image} width="40px" height="40px" style={{borderradius: "100px"}} className="userimg"/>
+    <DropdownButton id="dropdown-basic-button" src={image} className="dropdown">
+      <Dropdown.Item href="#/action-1">เกี่ยวกับผู้ใช้</Dropdown.Item>
+      <Dropdown.Item href="#/action-2">ชื่อผู้ใช้    Admin_001</Dropdown.Item>
+      <Dropdown.Item href="#/action-3">Log out</Dropdown.Item>
+    </DropdownButton>
+  
+
+
+      
+     
+      
     </div>
   );
 }

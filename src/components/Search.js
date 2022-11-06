@@ -7,7 +7,7 @@ function Search() {
    return (
       
 
-      <div class="form-group has-search">
+      <div class="form-group has-search  searchs" style={{marginTop: "5%"}}>
       <span class="form-control-feedback"><IoIosSearch></IoIosSearch></span>
       <input type="text" class="form-control" placeholder="Search"></input>
     </div>

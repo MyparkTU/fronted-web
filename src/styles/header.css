@@ -1,7 +1,10 @@
 .spaces {
+  position: absolute;
     display: flex;
     flex-direction: row;
     width: 50%;
+    margin-left: 50%;
+    margin-top: -1%
   
   
     

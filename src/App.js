@@ -5,6 +5,7 @@ import Dashboard from './pages/DashBoardPage';
 import NotificationPage from './pages/NotificationPage';
 import ParkPage from './pages/ParkPage';
 import Reportpage from './pages/ReportPage';
+import Search from './components/Search';
 import { BrowserRouter as Router, Routes,Route} from 'react-router-dom';
 function App() {
   return (
