@@ -35,7 +35,7 @@ function SideBar() {
                                 <img src = {report} width= "24px" height= "24px" className='imagelogo'  /> 
                                รายงานปัญหา
                     </MenuItem >
-                        <MenuItem className='label menunoti'  href='/Notification'>
+                        <MenuItem className='label menunoti'  href='/Notifiaction'>
                                 <img src = {Notification} width= "24px" height= "24px"  className='imagelogo'  /> 
                                การแจ้งเตือน
                     </MenuItem>
