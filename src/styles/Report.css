@@ -1,0 +1,32 @@
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #035397;
+}
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: #757575;
+    --bs-nav-link-hover-color: var(--bs-link-hover-color);
+    --bs-nav-link-disabled-color: #757575d;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff !important;
+    background-color:#035397 !important;
+  }
+
+.card {
+    margin-left:5%;
+    margin-Right:5%;
+    height:750px;
+    border:1px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    
+}
