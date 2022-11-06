@@ -4,6 +4,8 @@ import Nav from 'react-bootstrap/Nav';
 import Tab from 'react-bootstrap/Tab';
 import ParkImage from '../asset/image/ParkImage.png';
 import Pagination from 'react-bootstrap/Pagination';
+import { Row, Container, Col} from 'react-bootstrap';
+import '../styles/Report.css'
 const changeActive= (props) => {
   active =  props
   console.log(active)
@@ -22,17 +24,18 @@ items.push(
 
 function ParkTable() {
   return (
-    <Card>
+    <Card className="card">
+      
       <Tab.Container defaultActiveKey="first">
-      <Card.Header>
+      <Card.Header style={{backgroundColor:"white"}}>
         <Nav variant="pills">
-          <Nav.Item>
+          <Nav.Item style={{marginLeft:"2%"}}>
             <Nav.Link eventKey="first">ทั้งหมด</Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item style={{marginLeft:"5%"}}>
             <Nav.Link eventKey="second">กำลังรอดำเนินการ</Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item style={{marginLeft:"5%"}}>
             <Nav.Link eventKey="third">ดำเนินการเสร็จสิ้น</Nav.Link> 
           </Nav.Item>
         </Nav>
@@ -40,10 +43,17 @@ function ParkTable() {
       <Card.Body>
         <Tab.Content>
           <Tab.Pane eventKey="first">
-        <Card.Text>
+        <Container fluid>
+          <Row>
+          <Col>
           <img src={ParkImage}/>
+          </Col>
+          <Col>
+          <text style={{color:"#757575"}}>
           ลานจอดรถวิศวะ
+          </text>
           <br/>
+          <text style={{color:"#818181"}}>
           11/22/2022 15:02
           <br/>
           หัวเรื่อง : เซ็นเซอร์เสีย
@@ -51,7 +61,18 @@ function ParkTable() {
           ประเภทปัญหา : เซ็นเซอร์
           <br/>
           ข้อความ : เซ็นเซอร์เสียครับแอพบอกว่ามีที่จอดแต่ช่องจอดเต็ม
-        </Card.Text>
+          </text>
+          </Col>
+          <Col xs={4}>
+          <text style={{backgroundColor:"#FFF0CA",color:"#C58E00"}}>สถานะ :  รอการตรวจสอบ </text> 
+          </Col>
+          <Col xs={4} >
+            <text style={{backgroundColor:"#035397",color:"#FFF"}}>
+          เปลี่ยนสถานะ
+          </text>
+          </Col>
+          </Row>
+        </Container>
         </Tab.Pane>
         <Tab.Pane eventKey="second">
         <Card.Text>
@@ -68,8 +89,12 @@ function ParkTable() {
         </Tab.Pane>
       </Card.Body>
       </Tab.Container>
-      <Card.Footer>
-      <Pagination>{items}</Pagination>
+      <Card.Footer class="d-flex justify-content-center">
+      <Pagination>
+      <Pagination.Prev></Pagination.Prev>
+      {items}
+      <Pagination.Next/>
+      </Pagination>
       </Card.Footer>
     </Card>
   );
