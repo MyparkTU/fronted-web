@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 import Tab from 'react-bootstrap/Tab';
 
+let items = [];
 function NavTabsExample() {
   return (
     <Card>

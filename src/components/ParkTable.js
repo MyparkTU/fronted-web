@@ -24,7 +24,7 @@ items.push(
 
 function ParkTable() {
   return (
-    <Card className="card">
+    <Card className="card-park">
       
       <Tab.Container defaultActiveKey="first">
       <Card.Header style={{backgroundColor:"white"}}>
