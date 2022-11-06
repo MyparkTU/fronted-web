@@ -16,3 +16,20 @@
     margin-top: -5%;
     font-size: 16px;
 }
+
+@media screen and (max-width: 768px) {
+    .headerlabelreport{
+        font-size: 10px;
+        margin-top: 19%;
+        
+    }
+    .underlabelreport {
+        font-size: 10px;
+    }
+    .Topic{
+        margin-left: -5%;
+    }
+    .reportrow {
+        margin-left: -5%;
+    }
+}

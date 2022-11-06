@@ -27,7 +27,7 @@ function UserInfo() {
     <DropdownButton id="dropdown-basic-button"  className="dropdown" color='FFFFF'>
       <Dropdown.Item href="#/action-1">เกี่ยวกับผู้ใช้</Dropdown.Item>
       <Dropdown.Item href="#/action-2">ชื่อผู้ใช้    Admin_001</Dropdown.Item>
-      <Dropdown.Item href="#/action-3">Log out</Dropdown.Item>
+      <Dropdown.Item href="/login">Log out</Dropdown.Item>
     </DropdownButton>
   
 

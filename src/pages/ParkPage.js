@@ -9,7 +9,7 @@ function ParkPage() {
             <header className="shadowheader" >
             <div className="Dashboardrow">
                 <SideBar />
-                    <div className="Topic">
+                    <div className="TopicParkpage">
                         <h2 className="headerlabelparkpage">สถานที่จอดรถทั้งหมด</h2>
                         <p className="underlabelparkpage">Management > สถานที่จอดรถทั้งหมด</p>
                     </div>
