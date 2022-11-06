@@ -3,6 +3,9 @@
     border-radius:10px;
     font-family: Promptlight;
     font-size :20px;
+    margin-left:3%;
+    position: absolute;
+    margin-top: -10%;
 }
 
 .parkName{
@@ -43,8 +46,5 @@
     font-size:16px;
 }
 
-*::placeholder {
-    /* modern browser */
-    color: red;
-}
+
 

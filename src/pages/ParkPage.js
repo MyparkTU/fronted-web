@@ -2,6 +2,7 @@ import SideBar from "../components/SideBar";
 import Headers from "../components/header";
 import '../styles/Park.css';
 import Tablepark from '../components/ParkTable';
+import AddPark from '../components/AddPark';
 
 
 function ParkPage() {
@@ -19,6 +20,7 @@ function ParkPage() {
             </div>
            </header>
            <body>
+                    <AddPark/>
                     <Tablepark />
                 </body>
         </div>
