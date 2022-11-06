@@ -44,11 +44,11 @@ function ParkTable() {
         <Tab.Content>
           <Tab.Pane eventKey="first">
         <Container fluid>
-          <Row>
-          <Col>
-          <img src={ParkImage}/>
+          <Row className="destopic">
+          <Col >
+          <img src={ParkImage} style={{position:"absolute"}}/>
           </Col>
-          <Col>
+          <Col xs = {3} style = {{marginLeft:"150px"}}>
           <text className="park-name">
           ลานจอดรถวิศวะ
           </text>
@@ -62,12 +62,12 @@ function ParkTable() {
           <br/>
           ข้อความ : เซ็นเซอร์เสียครับแอพบอกว่ามีที่จอดแต่ช่องจอดเต็ม
           </text>
-          </Col>
-          <Col xs={4}>
-          <text className="status-park">สถานะ :  รอการตรวจสอบ </text> 
+          </Col >
+          <Col xs={2}>
+          <text className="status-park" style={{marginLeft:"70px"}}>สถานะ :  รอการตรวจสอบ </text> 
           </Col>
           <Col xs={4} >
-            <text className="status-button">
+            <text className="status-button" style={{marginLeft:"80px"}}>
           เปลี่ยนสถานะ
           </text>
           </Col>
