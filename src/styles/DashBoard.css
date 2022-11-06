@@ -1,6 +1,24 @@
 .headerlabel {
     font-family: 'Promptlight';
     font-weight: 700px;
-    font-size: 36px;
+    font-size: 16px;
+    margin-top: 13.5%;
+
+   
+
+}
+.Dashboardrow{
+    display: flex;
+    flex-direction: row;
+}
+.Topic {
+    display: flex;
+    flex-direction: column;
+}
+.underlabel{
+    font-family: 'Promptlight';
+    color: #757575;
+    margin-top: -7%;
+    font-size: 16px;
 
 }

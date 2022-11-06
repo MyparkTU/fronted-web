@@ -5,13 +5,19 @@ import '../styles/Notification.css';
 
 function Notification() {
     return(
-        <div> 
-            <h2 className="headerlabel">การแจ้งเตือนทั้งหมด</h2>
-            <Headers />
-            <SideBar />
-
+        <header>
+        <div>     
+            <div className="Notirow">
+                <SideBar />
+                    <div className="Topic">
+                        <h2 className="headerlabelNoti">การแจ้งเตือนทั้งหมด</h2>
+                        <p className="underlabelNoti">Information > การแจ้งเตือน</p>
+                    </div>
+                <Headers />
+            </div>
             
         </div>
+        </header>
     );
 }
 

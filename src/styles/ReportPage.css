@@ -1,19 +1,18 @@
-.headerlabelparkpage{
+.reportrow{
+    display: flex;
+    flex-direction: row;
+}
+.headerlabelreport{
     font-family: 'Promptlight';
     font-weight: 700px;
     font-size: 16px;
-    margin-top: 8.5%;
-    
-       
+    margin-top: 10.5%;
     
 }
-.underlabelparkpage{
+
+.underlabelreport{
     font-family: 'Promptlight';
     color: #757575;
     margin-top: -5%;
     font-size: 16px;
-}
-.Topic {
-    display: flex;
-    flex-direction: column;
 }

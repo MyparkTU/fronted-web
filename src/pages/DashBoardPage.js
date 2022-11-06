@@ -6,11 +6,19 @@ import NewReport from'../components/NewReport';
 function DashboardPage() {
     return(
         <div> 
-            <h2 className="headerlabel">ภาพรวม</h2>
-            <Headers />
-            <SideBar />
+            <header>
+            <div className="Dashboardrow">
+                <SideBar />
+                    <div className="Topic">
+                        <h2 className="headerlabel">ภาพรวม</h2>
+                        <p className="underlabel">Dashboard > ภาพรวม</p>
+                    </div>
+                <Headers />
+            </div>
+            </header>
             <NewReport />
         </div>
+        
     );
 }
 

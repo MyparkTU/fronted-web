@@ -6,10 +6,16 @@ import '../styles/Park.css';
 function ParkPage() {
     return(
         <div> 
-            <h2 className="headerlabel">สถานที่จอดรถทั้งหมด</h2>
-            <Headers />
-            <SideBar />
-        
+            <header>
+            <div className="Dashboardrow">
+                <SideBar />
+                    <div className="Topic">
+                        <h2 className="headerlabelparkpage">สถานที่จอดรถทั้งหมด</h2>
+                        <p className="underlabelparkpage">Management > สถานที่จอดรถทั้งหมด</p>
+                    </div>
+                <Headers />
+            </div>
+           </header>
         </div>
     );
 }

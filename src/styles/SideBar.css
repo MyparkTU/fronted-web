@@ -28,6 +28,7 @@
 .menudashboard{
     margin-top: 20%;
     margin-left: 10%;
+    padding-right: 40px;
 
 }
 
@@ -40,11 +41,13 @@
 
 .menupark {
     margin-left: 10%;
+    padding-right: 40px;
 
 }
 .menunoti {
     margin-left: 10%;
     margin-top: 5%;
+    padding-right: 40px;
 }
 .imagelogo {
     margin-right: 5%;
@@ -53,7 +56,8 @@
 }
 
 .btns {
-    background-color: #1A324A;
-    margin-top: 20% ;
+    background-color: #ffffff;
+    margin-top: 7% ;
+    border: 0;
 
 }

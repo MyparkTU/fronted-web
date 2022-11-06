@@ -35,7 +35,7 @@ function SideBar() {
                                 <img src = {report} width= "24px" height= "24px" className='imagelogo'  /> 
                                รายงานปัญหา
                     </MenuItem >
-                        <MenuItem className='label menunoti'  href='/Notifiaction'>
+                        <MenuItem className='label menunoti'  href='/Notification' >
                                 <img src = {Notification} width= "24px" height= "24px"  className='imagelogo'  /> 
                                การแจ้งเตือน
                     </MenuItem>
@@ -49,7 +49,7 @@ function SideBar() {
         <main style={{ display: 'flex', padding: 10 }}>
         <div>
             
-          <button type="button"  class="btn btn-secondary btns" onClick={() => toggleSidebar() } ><img src={menu}  />
+          <button type="button"  class="btn btn-secondary btns" onClick={() => toggleSidebar() } ><img src={menu} width="53px" height="35px" />
           
           </button>
         </div>
