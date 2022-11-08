@@ -22,60 +22,6 @@ items.push(
 }
 
 
-<<<<<<< HEAD
-
-function ReportTable() {
-    return (
-        <Card className="report-table">
-            <Card.Header style={{backgroundColor:"white"}}>
-                <Row>
-                <Col>
-                    <text className="park-place">สถานที่จอดรถ</text>
-                </Col>
-                <Col xl={2}>
-                    <text className="park-type">ประเภทที่จอดรถ</text>
-                </Col>
-                <Col>
-                    <text className="park-sensor">เซ็นเซอร์</text>
-                </Col>
-                <Col>
-                    <text className="park-score">คะแนน</text>
-                </Col>
-                <Col>
-                    <text className="park-status">สถานะ</text>
-                </Col>
-                <Col>
-                    
-                </Col>
-                <Col/>
-                </Row>
-            </Card.Header>
-            <Card.Body>
-            <Row>
-                <Col>
-                <img src={ParkImage} width="85%"></img>
-                </Col>
-                <Col>
-                <text className="type-park"> ที่จอดรถสาธารณะ </text>
-                </Col>
-                <Col>
-                <text>
-
-                </text>
-                </Col>
-                <Col>
-                    
-                </Col>
-                <Col>
-                <text className="text-status">พร้อมใช้งาน</text>
-                </Col>
-                <Col>
-                <button className="btn btn-default1" id="status-button"style={{backgroundColor:"#FBF6DB",color:"#D9B966"}}>แก้ไข</button>
-                </Col>
-                <Col>
-                <button className="btn btn-default2" style={{backgroundColor:"#FBDBDB",color:"#D96666"}}>ลบ</button>
-                </Col>
-=======
 function ParkTable() {
   return (
     <Card className="card-park">
@@ -120,8 +66,8 @@ function ParkTable() {
           <Col xs={2}>
           <text className="status-park" >สถานะ :  รอการตรวจสอบ </text> 
           </Col>
-          <Col xs={4} className="status-button" >
-            <text  className='labelstate'>
+          <Col xs={4} >
+            <text className="status-button">
           เปลี่ยนสถานะ
           </text>
           </Col>
@@ -137,44 +83,20 @@ function ParkTable() {
         <Tab.Pane eventKey="third">
           <Card.Text>
             Sawadee krub
->>>>>>> e07c1f196785a7159e27bbe10a635acb3060446e
             
-            </Row>
-            <Row>
-            <Col>
-                <img src={ParkImage} width="85%"></img>
-            </Col>
-            <Col>
-                <text className="type-park"> ที่จอดรถสาธารณะ </text>
-            </Col>
-            <Col>
-                <text className='type-park'>
-                    เซ็นเซอร์ 11,12
-                </text>
-                </Col>
-                <Col>
-                    
-                </Col>
-                <Col>
-                <text style={{backgroundColor:"#F4FBDB",color:"#92D966"}}>พร้อมใช้งาน</text>
-                </Col>
-                <Col>
-                <button className="btn btn-default1" >แก้ไข</button>
-                </Col>
-                <Col>
-                <button className="btn btn-default2">ลบ</button>
-                </Col>
-            </Row>
-            </Card.Body>
-            <Card.Footer class="d-flex justify-content-center">
-            <Pagination>
-            <Pagination.Prev></Pagination.Prev>
-            {items}
-            <Pagination.Next/>
-            </Pagination>
-            </Card.Footer>    
-        </Card>
-    )
+            
+          </Card.Text>
+        </Tab.Pane>
+      </Card.Body>
+      </Tab.Container>
+      <Card.Footer class="d-flex justify-content-center">
+      <Pagination>
+      <Pagination.Prev></Pagination.Prev>
+      {items}
+      <Pagination.Next/>
+      </Pagination>
+      </Card.Footer>
+    </Card>
+  )
 }
-
-export default ReportTable;
+  export default ParkTable;
