@@ -6,26 +6,20 @@ import './asset/font/Prompt-Bold.ttf'
 import './asset/font/Nunito-Regular.ttf'
 import LoginPage from './pages/LoginPage';
 import reportWebVitals from './reportWebVitals';
-import Reporttest from './components/NewReport';
-import Header from './components/header';
-import SideBar from './components/SideBar'
-import { BrowserRouter } from 'react-router-dom';
+//import { store } from './redux/store/index.js'
+import { Provider } from 'react-redux'
+//import App from './App';
 import App from './App';
 import { ProSidebarProvider } from 'react-pro-sidebar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-
-<ProSidebarProvider>
-
-  <App/>
-
-     
-    </ProSidebarProvider>
-    
-
-  </React.StrictMode>
+  
+    <React.StrictMode>
+      <ProSidebarProvider>
+        <App/>
+      </ProSidebarProvider>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
