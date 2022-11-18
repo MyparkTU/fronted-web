@@ -1,7 +1,7 @@
 import '../styles/login.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import  React, { Component } from "react";
-import logoimage from '../asset/image/logoMypark.png'
+import logoimage from '../assets/image/logoMypark.png'
 import { useState } from 'react';
 
 async function loginUser(credentials) {

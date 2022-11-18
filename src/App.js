@@ -1,47 +1,59 @@
+import React, { useState } from "react";
+import { Helmet } from "react-helmet";
+import { ThemeProvider } from "styled-components";
+import Layout from "./components/Layout/Layout";
+import Routes from "./Routes";
+import { GlobalStyle } from "./styles/globalStyles";
+import { darkTheme, lightTheme } from "./styles/theme";
 
 import LoginPage from './pages/LoginPage';
-import SideBar from './components/SideBar';
-import Dashboard from './pages/DashBoardPage';
-import NotificationPage from './pages/NotificationPage';
-import ParkPage from './pages/ParkPage';
-import Reportpage from './pages/ReportPage';
-import Search from './components/Search';
-import ParkTable from './components/ParkTable';
-import AddPark from './components/AddPark';
-import NotificationTable from './components/NotificationTable';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
+
+export const ThemeContext = React.createContext(null);
 
 function setToken(userToken) {
-  sessionStorage.setItem('token', JSON.stringify(userToken));
+    sessionStorage.setItem('token', JSON.stringify(userToken));
 }
 
 function getToken() {
-  const tokenString = sessionStorage.getItem('token');
-  const userToken = JSON.parse(tokenString);
-  return userToken?.token
+    const tokenString = sessionStorage.getItem('token');
+    const userToken = JSON.parse(tokenString);
+    return userToken?.token
 }
 
-function App() {
-  const token = getToken();
+const App = () => {
+    const [theme, setTheme] = useState("light");
+    const themeStyle = theme === "light" ? lightTheme : darkTheme;
 
-  if(!token) {
-    console.log(token)
-    return <LoginPage setToken={setToken} />
-  }
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/Login" element={<LoginPage />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
-        <Route path="/Notifiaction" element={<NotificationPage />} />
-        <Route path="/Park" element={<ParkPage />} />
-        <Route path="/Report" element={<Reportpage />} />
-        <Route path="/Notification" element={<NotificationPage />} />
-      </Routes>
-    </Router>
-  );
-}
+
+    const token = getToken();
+
+    if (!token) {
+        console.log(token)
+        return <LoginPage setToken={setToken} />
+    }
+    else{
+        return (
+            <ThemeContext.Provider value={{ setTheme, theme }}>
+                <ThemeProvider theme={themeStyle}>
+                    <GlobalStyle />
+                    <Helmet>
+                        <title>Sidebar - Code Focus</title>
+                        <link rel="preconnect" href="https://fonts.googleapis.com" />
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                        <link
+                            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+                            rel="stylesheet"
+                        />
+                    </Helmet>
+                    <>
+                        <Layout>
+                            <Routes />
+                        </Layout>
+                    </>
+                </ThemeProvider>
+            </ThemeContext.Provider>
+        );
+    }
+};
 
 export default App;
