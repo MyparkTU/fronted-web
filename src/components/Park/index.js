@@ -30,27 +30,10 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
     },
 }));
 
-function createData(name, calories, fat, carbs, protein) {
-    return { name, calories, fat, carbs, protein };
-}
 
-const rows = [
-    createData('ลานจอดรถวิศวกรรมศาสตร์', "ลานจอดรถสาธารณะ", "พร้อมใช้งาน", "5", "ลบ"),
-    createData('ลานจอดรถวิศวกรรมศาสตร์', "ลานจอดรถสาธารณะ", "พร้อมใช้งาน", "5", "ลบ"),
-    createData('ลานจอดรถวิศวกรรมศาสตร์', "ลานจอดรถสาธารณะ", "พร้อมใช้งาน", "5", "ลบ"),
-    createData('ลานจอดรถวิศวกรรมศาสตร์', "ลานจอดรถสาธารณะ", "พร้อมใช้งาน", "5", "ลบ"),
-    createData('ลานจอดรถวิศวกรรมศาสตร์', "ลานจอดรถสาธารณะ", "พร้อมใช้งาน", "5", "ลบ"),
-    createData('ลานจอดรถวิศวกรรมศาสตร์', "ลานจอดรถสาธารณะ", "พร้อมใช้งาน", "5", "ลบ"),
-    createData('ลานจอดรถวิศวกรรมศาสตร์', "ลานจอดรถสาธารณะ", "พร้อมใช้งาน", "5", "ลบ"),
-    createData('ลานจอดรถวิศวกรรมศาสตร์', "ลานจอดรถสาธารณะ", "พร้อมใช้งาน", "5", "ลบ"),
-    createData('ลานจอดรถวิศวกรรมศาสตร์', "ลานจอดรถสาธารณะ", "พร้อมใช้งาน", "5", "ลบ"),
-    createData('ลานจอดรถวิศวกรรมศาสตร์', "ลานจอดรถสาธารณะ", "พร้อมใช้งาน", "5", "ลบ"),
-    createData('ลานจอดรถวิศวกรรมศาสตร์', "ลานจอดรถสาธารณะ", "พร้อมใช้งาน", "5", "ลบ"),
-    createData('ลานจอดรถวิศวกรรมศาสตร์', "ลานจอดรถสาธารณะ", "พร้อมใช้งาน", "5", "ลบ"),
-    createData('ลานจอดรถวิศวกรรมศาสตร์', "ลานจอดรถสาธารณะ", "พร้อมใช้งาน", "5", "ลบ"),
-];
-
-export default function CustomizedTables() {
+export default function CustomizedTables(props) {
+    let rows = props.data.data
+    console.log("this is props",rows)
     const [value, setValue] = React.useState(2);
     return (
         <TableContainer component={Paper}>
@@ -60,6 +43,7 @@ export default function CustomizedTables() {
                         <StyledTableCell>สถานที่จอดรถ</StyledTableCell>
                         <StyledTableCell align="right">ประเภท</StyledTableCell>
                         <StyledTableCell align="right">สถานะ</StyledTableCell>
+                        <StyledTableCell align="right">จำนวน</StyledTableCell>
                         <StyledTableCell align="right">รีวิว</StyledTableCell>
                         <StyledTableCell align="right"></StyledTableCell>
                     </TableRow>
@@ -70,10 +54,11 @@ export default function CustomizedTables() {
                             <StyledTableCell component="th" scope="row">
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align="right">{row.calories}</StyledTableCell>
-                            <StyledTableCell align="right">{row.fat}</StyledTableCell>
+                            <StyledTableCell align="right">สาธารณะ</StyledTableCell>
+                            <StyledTableCell align="right">พร้อมใช้งาน</StyledTableCell>
+                            <StyledTableCell align="right">{row.quantity}</StyledTableCell>
                             <StyledTableCell align="right">
-                            <Rating name="read-only" value={value} readOnly />
+                            <Rating name="read-only" value={parseInt(row.review)} readOnly />
                             </StyledTableCell>
                             <StyledTableCell align="right"><Button  size="small" variant="outlined" color="error">ลบ </Button></StyledTableCell>
                         </StyledTableRow>

@@ -12,69 +12,48 @@ import {
 
 const data = [
    {
-    name: "Page A",
-    pv: 32,
-    amt: 2400
+    name: "หลัง class cafe",
+    car: 32,
   },
     {
-    name: "Page A",
-    pv: 32,
-    amt: 2400
+    name: "คณะวิศวะ (โยธา)",
+    car: 32,
   },
   {
-    name: "Page B",
-    pv: 47,
-    amt: 2210
+    name: "หลังโรงอาหาร sc",
+    car: 47,
   },
   {
-    name: "Page C",
-    pv: 38,
-    amt: 2290
+    name: "หน้ายิม 7",
+    car: 38,
   },
   {
-    name: "Page D",
-    pv: 73,
-    amt: 2000
+    name: "หลังยิม 7 *ฝั่งสนามฟุตซอล",
+    car: 73,
   },
   {
-    name: "Page E",
-    pv: 54,
-    amt: 2181
+    name: "ข้าง บร. 5",
+    car: 54,
   },
   {
-    name: "Page F",
-    pv: 41,
-    amt: 2500
+    name: "ตรงข้าม บร.4",
+    car: 41,
   },
   {
-    name: "Page G",
-    pv: 23,
-    amt: 2100
+    name: "หลังคณะวารสาร",
+    car: 23,
   },
   {
-    name: "Page E",
-    pv: 54,
-    amt: 2181
+    name: "อาคารเรียนรวมสังคมศาสตร์(SC)",
+    car: 54,
   },
   {
-    name: "Page F",
-    pv: 41,
-    amt: 2500
+    name: "ข้างคณะวิศวะ-โรงอาหารJC",
+    car: 41,
   },
   {
-    name: "Page G",
-    pv: 23,
-    amt: 2100
-  },
-  {
-    name: "Page F",
-    pv: 41,
-    amt: 2500
-  },
-  {
-    name: "Page G",
-    pv: 23,
-    amt: 2100
+    name: "คณะวิศวะ (ยานยนต์)",
+    car: 23,
   }
 ];
 
@@ -96,7 +75,7 @@ export default function App() {
       <YAxis />
       <Tooltip />
       <Legend />
-      <Bar dataKey="pv" stackId="a" fill="#8884d8" />
+      <Bar dataKey="car" stackId="a" fill="#467FCF" />
     </BarChart>
   );
 }

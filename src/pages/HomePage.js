@@ -37,46 +37,7 @@ export default function BasicGrid() {
                     <Card sx={{ minWidth: 100 }} container justifyContent="center">
                         <CardContent>
                             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                รีวิว
-                            </Typography>
-
-                            <Typography variant="h4">
-                                155
-                            </Typography>
-                        </CardContent>
-                    </Card>
-                </Grid>
-                <Grid item xs={2}>
-                    <Card sx={{ minWidth: 100 }}>
-                        <CardContent>
-                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                สถานที่จอดรถใหม่
-                            </Typography>
-
-                            <Typography variant="h4">
-                                100
-                            </Typography>
-                        </CardContent>
-                    </Card>
-                </Grid>
-                <Grid item xs={2}>
-                    <Card sx={{ minWidth: 100 }}>
-                        <CardContent>
-                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                รายงานปัญหา
-                            </Typography>
-
-                            <Typography variant="h4">
-                                10
-                            </Typography>
-                        </CardContent>
-                    </Card>
-                </Grid>
-                <Grid item xs={2}>
-                    <Card sx={{ minWidth: 100 }}>
-                        <CardContent>
-                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                ปัญหาที่ได้รับการแก้ไข
+                                จำนวนรีวิว
                             </Typography>
 
                             <Typography variant="h4">
@@ -89,11 +50,50 @@ export default function BasicGrid() {
                     <Card sx={{ minWidth: 100 }}>
                         <CardContent>
                             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                                สถานที่จอดทั้งหมด
+                            </Typography>
+
+                            <Typography variant="h4">
+                                14
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={2}>
+                    <Card sx={{ minWidth: 100 }}>
+                        <CardContent>
+                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                                รายงานปัญหา
+                            </Typography>
+
+                            <Typography variant="h4">
+                                2
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={2}>
+                    <Card sx={{ minWidth: 100 }}>
+                        <CardContent>
+                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                                ปัญหาที่ได้รับการแก้ไข
+                            </Typography>
+
+                            <Typography variant="h4">
+                                1
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={2}>
+                    <Card sx={{ minWidth: 100 }}>
+                        <CardContent>
+                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                                 อุปกรณ์พร้อมใช้งาน
                             </Typography>
 
                             <Typography variant="h4">
-                                100%
+                                100
                             </Typography>
                         </CardContent>
                     </Card>

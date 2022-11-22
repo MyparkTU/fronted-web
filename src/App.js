@@ -12,6 +12,7 @@ export const ThemeContext = React.createContext(null);
 
 function setToken(userToken) {
     sessionStorage.setItem('token', JSON.stringify(userToken));
+    window.location.reload();
 }
 
 function getToken() {
@@ -32,12 +33,13 @@ const App = () => {
         return <LoginPage setToken={setToken} />
     }
     else{
+
         return (
             <ThemeContext.Provider value={{ setTheme, theme }}>
                 <ThemeProvider theme={themeStyle}>
                     <GlobalStyle />
                     <Helmet>
-                        <title>Sidebar - Code Focus</title>
+                        <title>Dashboard</title>
                         <link rel="preconnect" href="https://fonts.googleapis.com" />
                         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                         <link

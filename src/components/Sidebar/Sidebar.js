@@ -32,6 +32,10 @@ import { BsPeople } from "react-icons/bs";
 
 import { ThemeContext } from "./../../App";
 import { useLocation } from "react-router-dom";
+function logout() {
+    sessionStorage.removeItem('token')
+    window.location.reload()
+}
 
 const Sidebar = () => {
     const searchRef = useRef(null);
@@ -91,7 +95,7 @@ const Sidebar = () => {
             <SDivider />
             {secondaryLinksArray.map(({ icon, label }) => (
                 <SLinkContainer key={label}>
-                    <SLink to="/" style={!sidebarOpen ? { width: `fit-content` } : {}} onClick={() => sessionStorage.removeItem('token')} >
+                    <SLink to="/" style={!sidebarOpen ? { width: `fit-content` } : {}} onClick={() => label === "ออกจากระบบ"? logout() : console.log('setting')} >
                         <SLinkIcon>{icon}</SLinkIcon>
                         {sidebarOpen && <SLinkLabel>{label}</SLinkLabel>}
                     </SLink>
@@ -110,6 +114,7 @@ const Sidebar = () => {
         </SSidebar>
     );
 };
+
 
 const linksArray = [
     {
